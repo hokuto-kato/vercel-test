@@ -39,7 +39,7 @@ pug.forEach((template) => {
 			template: template,
 			inject: true,
 			alwaysWriteToDisk: true,
-			favicon: `./src/favicon/favicon.ico`
+			favicon: `./src/favicon/favicon.svg`
 		}),
 	)
 })
