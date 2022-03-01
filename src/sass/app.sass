@@ -1,0 +1,42 @@
+@import "destyle.css"
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@800&display=swap')
+@import "./base"
+@import "./keyframes"
+
+body
+	width: 100vw
+	height: 100vh
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	background-color: #000
+p
+	font-size: 10vw
+	color: #fff
+	font-family: 'JetBrains Mono', monospace
+	text-align: center
+	position: relative
+	z-index: 3
+	&:before
+		content: 'Hello World'
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: -1
+		color: #ff4081
+		animation: glitch 1s cubic-bezier(.25, .46, .45, .94) both infinite
+	&:after
+		content: 'Hello World'
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: -2
+		color: #40c4ff
+		animation: glitch 1s cubic-bezier(.25, .46, .45, .94) reverse both infinite
