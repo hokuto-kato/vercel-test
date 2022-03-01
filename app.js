@@ -10,7 +10,7 @@ const app = protect(
 		return safeCompare(username, USER_NAME) && safeCompare(password, PASSWORD)
 	},
 	{
-		directory: `${ __dirname }/dest`,
+		directory: `${ __dirname }/dist`,
 		onAuthFailed: (res) => {
 			res.end('Authentication failed.')
 		},
