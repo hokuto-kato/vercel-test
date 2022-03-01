@@ -1,14 +1,14 @@
 const protect = require('static-auth');
 const safeCompare = require('safe-compare');
 
-const USER_NAME = 'user';
-const PASSWORD = 'password';
+const USER_NAME = '4Rw7E3bKKG_2P';
+const PASSWORD = 'dwUE3YnUKXt.M';
 
-const app = protect(
+const index = protect(
 	'/',
 	(username, password) => {
 		return safeCompare(username, USER_NAME) && safeCompare(password, PASSWORD)
-	},
+},
 	{
 		directory: `${ __dirname }/dist`,
 		onAuthFailed: (res) => {
@@ -17,4 +17,4 @@ const app = protect(
 	}
 );
 
-module.exports = app;
+module.exports = index;
